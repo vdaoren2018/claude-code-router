@@ -1,0 +1,22 @@
+[package]
+name = "ccr-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+async-stream = "0.3"
+axum = { version = "0.8", features = ["json"] }
+ccr-config = { path = "../ccr-config" }
+ccr-core = { path = "../ccr-core" }
+ccr-protocol = { path = "../ccr-protocol" }
+futures-util = "0.3"
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }

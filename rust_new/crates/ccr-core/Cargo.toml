@@ -1,0 +1,18 @@
+[package]
+name = "ccr-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+ccr-config = { path = "../ccr-config" }
+ccr-protocol = { path = "../ccr-protocol" }
+ccr-tokenizer = { path = "../ccr-tokenizer" }
+ccr-transform = { path = "../ccr-transform" }
+regex.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokio.workspace = true

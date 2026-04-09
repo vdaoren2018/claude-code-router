@@ -1,0 +1,17 @@
+{
+  // 基础配置样本
+  PORT: 3456,
+  LOG: true,
+  APIKEY: "${CCR_SAMPLE_API_KEY}",
+  Providers: [
+    {
+      name: "openai",
+      api_base_url: "https://api.openai.com/v1/chat/completions",
+      api_key: "$OPENAI_API_KEY",
+      models: ["gpt-5"],
+    },
+  ],
+  Router: {
+    default: "openai,gpt-5",
+  },
+}
